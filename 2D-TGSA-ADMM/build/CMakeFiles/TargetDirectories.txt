@@ -1,0 +1,3 @@
+/mirror/wgz/sparse_admm/build/CMakeFiles/rebuild_cache.dir
+/mirror/wgz/sparse_admm/build/CMakeFiles/sparse_admm.dir
+/mirror/wgz/sparse_admm/build/CMakeFiles/edit_cache.dir

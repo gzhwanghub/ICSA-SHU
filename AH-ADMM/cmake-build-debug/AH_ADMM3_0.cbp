@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="AH_ADMM3_0"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/Users/qiuqinnan/Documents/Code/AH-ADMM3.0/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/qiuqinnan/Documents/Code/AH-ADMM3.0/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/qiuqinnan/Documents/Code/AH-ADMM3.0/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/qiuqinnan/Documents/Code/AH-ADMM3.0/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/qiuqinnan/Documents/Code/AH-ADMM3.0/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="/Users/qiuqinnan/Documents/Code/AH-ADMM3.0/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/qiuqinnan/Documents/Code/AH-ADMM3.0/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/qiuqinnan/Documents/Code/AH-ADMM3.0/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/qiuqinnan/Documents/Code/AH-ADMM3.0/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/qiuqinnan/Documents/Code/AH-ADMM3.0/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/Users/qiuqinnan/Documents/Code/AH-ADMM3.0/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/qiuqinnan/Documents/Code/AH-ADMM3.0/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/qiuqinnan/Documents/Code/AH-ADMM3.0/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/qiuqinnan/Documents/Code/AH-ADMM3.0/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/qiuqinnan/Documents/Code/AH-ADMM3.0/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="AH_ADMM3_0">
+				<Option output="/Users/qiuqinnan/Documents/Code/AH-ADMM3.0/cmake-build-debug/AH_ADMM3_0" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/qiuqinnan/Documents/Code/AH-ADMM3.0/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Users/qiuqinnan/Documents/Code/AH-ADMM3.0/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/10.0.1/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/qiuqinnan/Documents/Code/AH-ADMM3.0/cmake-build-debug/Makefile&quot;  VERBOSE=1 AH_ADMM3_0"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/qiuqinnan/Documents/Code/AH-ADMM3.0/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/qiuqinnan/Documents/Code/AH-ADMM3.0/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/qiuqinnan/Documents/Code/AH-ADMM3.0/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="AH_ADMM3_0/fast">
+				<Option output="/Users/qiuqinnan/Documents/Code/AH-ADMM3.0/cmake-build-debug/AH_ADMM3_0" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/qiuqinnan/Documents/Code/AH-ADMM3.0/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Users/qiuqinnan/Documents/Code/AH-ADMM3.0/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/10.0.1/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/qiuqinnan/Documents/Code/AH-ADMM3.0/cmake-build-debug/Makefile&quot;  VERBOSE=1 AH_ADMM3_0/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/qiuqinnan/Documents/Code/AH-ADMM3.0/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/qiuqinnan/Documents/Code/AH-ADMM3.0/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/qiuqinnan/Documents/Code/AH-ADMM3.0/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/Users/qiuqinnan/Documents/Code/AH-ADMM3.0/include/admm.h">
+			<Option target="AH_ADMM3_0"/>
+		</Unit>
+		<Unit filename="/Users/qiuqinnan/Documents/Code/AH-ADMM3.0/include/admm_comm.h">
+			<Option target="AH_ADMM3_0"/>
+		</Unit>
+		<Unit filename="/Users/qiuqinnan/Documents/Code/AH-ADMM3.0/include/dcd.h">
+			<Option target="AH_ADMM3_0"/>
+		</Unit>
+		<Unit filename="/Users/qiuqinnan/Documents/Code/AH-ADMM3.0/include/function.h">
+			<Option target="AH_ADMM3_0"/>
+		</Unit>
+		<Unit filename="/Users/qiuqinnan/Documents/Code/AH-ADMM3.0/include/l2r_lr_fun.h">
+			<Option target="AH_ADMM3_0"/>
+		</Unit>
+		<Unit filename="/Users/qiuqinnan/Documents/Code/AH-ADMM3.0/include/l2r_lr_fun_multicore_tron.h">
+			<Option target="AH_ADMM3_0"/>
+		</Unit>
+		<Unit filename="/Users/qiuqinnan/Documents/Code/AH-ADMM3.0/include/math_utils.h">
+			<Option target="AH_ADMM3_0"/>
+		</Unit>
+		<Unit filename="/Users/qiuqinnan/Documents/Code/AH-ADMM3.0/include/optimizer.h">
+			<Option target="AH_ADMM3_0"/>
+		</Unit>
+		<Unit filename="/Users/qiuqinnan/Documents/Code/AH-ADMM3.0/include/prob.h">
+			<Option target="AH_ADMM3_0"/>
+		</Unit>
+		<Unit filename="/Users/qiuqinnan/Documents/Code/AH-ADMM3.0/include/sparse_operator.h">
+			<Option target="AH_ADMM3_0"/>
+		</Unit>
+		<Unit filename="/Users/qiuqinnan/Documents/Code/AH-ADMM3.0/include/svm.h">
+			<Option target="AH_ADMM3_0"/>
+		</Unit>
+		<Unit filename="/Users/qiuqinnan/Documents/Code/AH-ADMM3.0/include/tron.h">
+			<Option target="AH_ADMM3_0"/>
+		</Unit>
+		<Unit filename="/Users/qiuqinnan/Documents/Code/AH-ADMM3.0/src/admm.cpp">
+			<Option target="AH_ADMM3_0"/>
+		</Unit>
+		<Unit filename="/Users/qiuqinnan/Documents/Code/AH-ADMM3.0/src/admm_comm.cpp">
+			<Option target="AH_ADMM3_0"/>
+		</Unit>
+		<Unit filename="/Users/qiuqinnan/Documents/Code/AH-ADMM3.0/src/dcd.cpp">
+			<Option target="AH_ADMM3_0"/>
+		</Unit>
+		<Unit filename="/Users/qiuqinnan/Documents/Code/AH-ADMM3.0/src/l2r_lr_fun.cpp">
+			<Option target="AH_ADMM3_0"/>
+		</Unit>
+		<Unit filename="/Users/qiuqinnan/Documents/Code/AH-ADMM3.0/src/l2r_lr_fun_multicore_tron.cpp">
+			<Option target="AH_ADMM3_0"/>
+		</Unit>
+		<Unit filename="/Users/qiuqinnan/Documents/Code/AH-ADMM3.0/src/math_utils.cpp">
+			<Option target="AH_ADMM3_0"/>
+		</Unit>
+		<Unit filename="/Users/qiuqinnan/Documents/Code/AH-ADMM3.0/src/prob.cpp">
+			<Option target="AH_ADMM3_0"/>
+		</Unit>
+		<Unit filename="/Users/qiuqinnan/Documents/Code/AH-ADMM3.0/src/sparse_operator.cpp">
+			<Option target="AH_ADMM3_0"/>
+		</Unit>
+		<Unit filename="/Users/qiuqinnan/Documents/Code/AH-ADMM3.0/src/svm.cpp">
+			<Option target="AH_ADMM3_0"/>
+		</Unit>
+		<Unit filename="/Users/qiuqinnan/Documents/Code/AH-ADMM3.0/src/train.cpp">
+			<Option target="AH_ADMM3_0"/>
+		</Unit>
+		<Unit filename="/Users/qiuqinnan/Documents/Code/AH-ADMM3.0/src/tron.cpp">
+			<Option target="AH_ADMM3_0"/>
+		</Unit>
+		<Unit filename="/Users/qiuqinnan/Documents/Code/AH-ADMM3.0/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>

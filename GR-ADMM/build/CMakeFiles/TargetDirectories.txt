@@ -1,0 +1,3 @@
+/mirror/wgz/hx/GR_ADMM/build/CMakeFiles/GR_ADMM.dir
+/mirror/wgz/hx/GR_ADMM/build/CMakeFiles/edit_cache.dir
+/mirror/wgz/hx/GR_ADMM/build/CMakeFiles/rebuild_cache.dir

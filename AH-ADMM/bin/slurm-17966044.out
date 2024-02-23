@@ -1,0 +1,28 @@
+当前进程：2, 当前进程的机器: cn12038, 训练数据集: /WORK/shu_gzwang_1/dataset/kdd12/8/data001, 数据集样本数量: 14963130, 数据集特征数量: 54686452
+当前进程：6, 当前进程的机器: cn12042, 训练数据集: /WORK/shu_gzwang_1/dataset/kdd12/8/data005, 数据集样本数量: 14963130, 数据集特征数量: 54686452
+当前进程：0 当前进程的机器:cn9640 测试数据集:/WORK/shu_gzwang_1/dataset/kdd12/test
+当前进程：1, 当前进程的机器: cn9641, 训练数据集: /WORK/shu_gzwang_1/dataset/kdd12/8/data000, 数据集样本数量: 14963130, 数据集特征数量: 54686452
+当前进程：5, 当前进程的机器: cn12041, 训练数据集: /WORK/shu_gzwang_1/dataset/kdd12/8/data004, 数据集样本数量: 14963130, 数据集特征数量: 54686452
+当前进程：4, 当前进程的机器: cn12040, 训练数据集: /WORK/shu_gzwang_1/dataset/kdd12/8/data003, 数据集样本数量: 14963130, 数据集特征数量: 54686452
+当前进程：8, 当前进程的机器: cn12044, 训练数据集: /WORK/shu_gzwang_1/dataset/kdd12/8/data007, 数据集样本数量: 14963122, 数据集特征数量: 54686452
+当前进程：7, 当前进程的机器: cn12043, 训练数据集: /WORK/shu_gzwang_1/dataset/kdd12/8/data006, 数据集样本数量: 14963130, 数据集特征数量: 54686452
+当前进程：3, 当前进程的机器: cn12039, 训练数据集: /WORK/shu_gzwang_1/dataset/kdd12/8/data002, 数据集样本数量: 14963130, 数据集特征数量: 54686452
+进程总数:9
+worker的id:1 2 3 4 5 6 7 8 
+线程数:24
+partial_barrier:4
+bounded_delay:4
+rho=1.000000
+C=1.000000
+abs_tol=0.001000
+rel_tol=0.001000
+admm_iter=200
+mdcd
+
+ #    pri_res    esp_pri   dual_res   esp_dual  objective   accuracy         time  comm_time_m   cal_time_m
+yhrun: Job step aborted: Waiting up to 2 seconds for job step to finish.
+yhrun: got SIGCONT
+slurmd[cn9640]: *** STEP 17966044.0 CANCELLED AT 2021-12-22T16:24:26 ***
+slurmd[cn9640]: *** JOB 17966044 CANCELLED AT 2021-12-22T16:24:26 ***
+yhrun: forcing job termination
+yhrun: error: cn12042: task 6: Terminated

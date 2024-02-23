@@ -1,0 +1,7 @@
+/Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /Users/qiuqinnan/Documents/Code/AH-ADMM3.0
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /Users/qiuqinnan/Documents/Code/AH-ADMM3.0/cmake-build-debug
+
+Problems were encountered while collecting compiler information:
+	clang: error: unsupported option '-fopenmp'

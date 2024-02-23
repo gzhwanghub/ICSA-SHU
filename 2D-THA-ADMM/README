@@ -1,0 +1,12 @@
+## 基本信息
+功能：基于ALLreduce通信的原始同步ADMM算法（GCADMM），参考S.BOYD论文代码
+该代码增加了4个基于AllReduce的同步算法，Ring-AllReduce，Hierarchical Ring-AllReduce，Torus-AllReduce, 2D-Torus-AllReduce
+## 版本更新
+20230324
+重新设计分层算法，节点内分层与节点外分层，并指定节点训练。
+20230403 
+从天河下载admm_collective文件夹，并修改2D-THA算法。
+20230509
+因为修改分散一致性ADMM算法，所以将该文件夹从天河上下载下来。
+ 
+

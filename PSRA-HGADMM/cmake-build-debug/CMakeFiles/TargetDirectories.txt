@@ -1,0 +1,3 @@
+/mirror/qyw/ECADMM/cmake-build-debug/CMakeFiles/ECADMM.dir
+/mirror/qyw/ECADMM/cmake-build-debug/CMakeFiles/edit_cache.dir
+/mirror/qyw/ECADMM/cmake-build-debug/CMakeFiles/rebuild_cache.dir
