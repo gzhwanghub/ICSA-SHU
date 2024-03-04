@@ -1,0 +1,1 @@
+mpic++ -fPIC -shared  -o _train_framework.so CMakeFiles/train_framework.dir/cpp/train_frameworkPYTHON_wrap.cxx.o CMakeFiles/train_framework.dir/src/train_framework.cpp.o  /usr/lib/x86_64-linux-gnu/libpython3.10.so 
