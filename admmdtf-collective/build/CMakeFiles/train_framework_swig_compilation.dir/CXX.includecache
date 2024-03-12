@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/mirror/wgz/admmdtf-collective/src/train_framework.h
+/mirror/wgz/ICSA-SHU/admmdtf-collective/src/train_framework.h
 map
 -
 mpi.h
@@ -28,9 +28,9 @@ string
 vector
 -
 
-/mirror/wgz/admmdtf-collective/src/train_framework.i
+/mirror/wgz/ICSA-SHU/admmdtf-collective/src/train_framework.i
 train_framework.h
-/mirror/wgz/admmdtf-collective/src/train_framework.h
+/mirror/wgz/ICSA-SHU/admmdtf-collective/src/train_framework.h
 train_framework.h
-/mirror/wgz/admmdtf-collective/src/train_framework.h
+/mirror/wgz/ICSA-SHU/admmdtf-collective/src/train_framework.h
 

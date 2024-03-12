@@ -1,4 +1,4 @@
-/mirror/wgz/admmdtf-collective/build/CMakeFiles/train_framework.dir
-/mirror/wgz/admmdtf-collective/build/CMakeFiles/train_framework_swig_compilation.dir
-/mirror/wgz/admmdtf-collective/build/CMakeFiles/edit_cache.dir
-/mirror/wgz/admmdtf-collective/build/CMakeFiles/rebuild_cache.dir
+/mirror/wgz/ICSA-SHU/admmdtf-collective/build/CMakeFiles/train_framework.dir
+/mirror/wgz/ICSA-SHU/admmdtf-collective/build/CMakeFiles/train_framework_swig_compilation.dir
+/mirror/wgz/ICSA-SHU/admmdtf-collective/build/CMakeFiles/edit_cache.dir
+/mirror/wgz/ICSA-SHU/admmdtf-collective/build/CMakeFiles/rebuild_cache.dir

@@ -1,4 +1,4 @@
-# Install script for directory: /mirror/wgz/admmdtf-collective
+# Install script for directory: /mirror/wgz/ICSA-SHU/admmdtf-collective
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -50,5 +50,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/mirror/wgz/admmdtf-collective/build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/mirror/wgz/ICSA-SHU/admmdtf-collective/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

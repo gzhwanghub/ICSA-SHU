@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /mirror/wgz/admmdtf-collective
+CMAKE_SOURCE_DIR = /mirror/wgz/ICSA-SHU/admmdtf-collective
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /mirror/wgz/admmdtf-collective/build
+CMAKE_BINARY_DIR = /mirror/wgz/ICSA-SHU/admmdtf-collective/build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/train_framework.dir/depend.make
@@ -72,30 +72,30 @@ include CMakeFiles/train_framework.dir/flags.make
 CMakeFiles/train_framework.dir/cpp/train_frameworkPYTHON_wrap.cxx.o: CMakeFiles/train_framework.dir/flags.make
 CMakeFiles/train_framework.dir/cpp/train_frameworkPYTHON_wrap.cxx.o: cpp/train_frameworkPYTHON_wrap.cxx
 CMakeFiles/train_framework.dir/cpp/train_frameworkPYTHON_wrap.cxx.o: CMakeFiles/train_framework.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mirror/wgz/admmdtf-collective/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/train_framework.dir/cpp/train_frameworkPYTHON_wrap.cxx.o"
-	mpic++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/train_framework.dir/cpp/train_frameworkPYTHON_wrap.cxx.o -MF CMakeFiles/train_framework.dir/cpp/train_frameworkPYTHON_wrap.cxx.o.d -o CMakeFiles/train_framework.dir/cpp/train_frameworkPYTHON_wrap.cxx.o -c /mirror/wgz/admmdtf-collective/build/cpp/train_frameworkPYTHON_wrap.cxx
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mirror/wgz/ICSA-SHU/admmdtf-collective/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/train_framework.dir/cpp/train_frameworkPYTHON_wrap.cxx.o"
+	mpic++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/train_framework.dir/cpp/train_frameworkPYTHON_wrap.cxx.o -MF CMakeFiles/train_framework.dir/cpp/train_frameworkPYTHON_wrap.cxx.o.d -o CMakeFiles/train_framework.dir/cpp/train_frameworkPYTHON_wrap.cxx.o -c /mirror/wgz/ICSA-SHU/admmdtf-collective/build/cpp/train_frameworkPYTHON_wrap.cxx
 
 CMakeFiles/train_framework.dir/cpp/train_frameworkPYTHON_wrap.cxx.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/train_framework.dir/cpp/train_frameworkPYTHON_wrap.cxx.i"
-	mpic++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mirror/wgz/admmdtf-collective/build/cpp/train_frameworkPYTHON_wrap.cxx > CMakeFiles/train_framework.dir/cpp/train_frameworkPYTHON_wrap.cxx.i
+	mpic++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mirror/wgz/ICSA-SHU/admmdtf-collective/build/cpp/train_frameworkPYTHON_wrap.cxx > CMakeFiles/train_framework.dir/cpp/train_frameworkPYTHON_wrap.cxx.i
 
 CMakeFiles/train_framework.dir/cpp/train_frameworkPYTHON_wrap.cxx.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/train_framework.dir/cpp/train_frameworkPYTHON_wrap.cxx.s"
-	mpic++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mirror/wgz/admmdtf-collective/build/cpp/train_frameworkPYTHON_wrap.cxx -o CMakeFiles/train_framework.dir/cpp/train_frameworkPYTHON_wrap.cxx.s
+	mpic++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mirror/wgz/ICSA-SHU/admmdtf-collective/build/cpp/train_frameworkPYTHON_wrap.cxx -o CMakeFiles/train_framework.dir/cpp/train_frameworkPYTHON_wrap.cxx.s
 
 CMakeFiles/train_framework.dir/src/train_framework.cpp.o: CMakeFiles/train_framework.dir/flags.make
 CMakeFiles/train_framework.dir/src/train_framework.cpp.o: ../src/train_framework.cpp
 CMakeFiles/train_framework.dir/src/train_framework.cpp.o: CMakeFiles/train_framework.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mirror/wgz/admmdtf-collective/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/train_framework.dir/src/train_framework.cpp.o"
-	mpic++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/train_framework.dir/src/train_framework.cpp.o -MF CMakeFiles/train_framework.dir/src/train_framework.cpp.o.d -o CMakeFiles/train_framework.dir/src/train_framework.cpp.o -c /mirror/wgz/admmdtf-collective/src/train_framework.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mirror/wgz/ICSA-SHU/admmdtf-collective/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/train_framework.dir/src/train_framework.cpp.o"
+	mpic++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/train_framework.dir/src/train_framework.cpp.o -MF CMakeFiles/train_framework.dir/src/train_framework.cpp.o.d -o CMakeFiles/train_framework.dir/src/train_framework.cpp.o -c /mirror/wgz/ICSA-SHU/admmdtf-collective/src/train_framework.cpp
 
 CMakeFiles/train_framework.dir/src/train_framework.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/train_framework.dir/src/train_framework.cpp.i"
-	mpic++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mirror/wgz/admmdtf-collective/src/train_framework.cpp > CMakeFiles/train_framework.dir/src/train_framework.cpp.i
+	mpic++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mirror/wgz/ICSA-SHU/admmdtf-collective/src/train_framework.cpp > CMakeFiles/train_framework.dir/src/train_framework.cpp.i
 
 CMakeFiles/train_framework.dir/src/train_framework.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/train_framework.dir/src/train_framework.cpp.s"
-	mpic++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mirror/wgz/admmdtf-collective/src/train_framework.cpp -o CMakeFiles/train_framework.dir/src/train_framework.cpp.s
+	mpic++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mirror/wgz/ICSA-SHU/admmdtf-collective/src/train_framework.cpp -o CMakeFiles/train_framework.dir/src/train_framework.cpp.s
 
 # Object files for target train_framework
 train_framework_OBJECTS = \
@@ -110,7 +110,7 @@ _train_framework.so: CMakeFiles/train_framework.dir/src/train_framework.cpp.o
 _train_framework.so: CMakeFiles/train_framework.dir/build.make
 _train_framework.so: /usr/lib/x86_64-linux-gnu/libpython3.10.so
 _train_framework.so: CMakeFiles/train_framework.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/mirror/wgz/admmdtf-collective/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX shared module _train_framework.so"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/mirror/wgz/ICSA-SHU/admmdtf-collective/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX shared module _train_framework.so"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/train_framework.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -122,6 +122,6 @@ CMakeFiles/train_framework.dir/clean:
 .PHONY : CMakeFiles/train_framework.dir/clean
 
 CMakeFiles/train_framework.dir/depend:
-	cd /mirror/wgz/admmdtf-collective/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /mirror/wgz/admmdtf-collective /mirror/wgz/admmdtf-collective /mirror/wgz/admmdtf-collective/build /mirror/wgz/admmdtf-collective/build /mirror/wgz/admmdtf-collective/build/CMakeFiles/train_framework.dir/DependInfo.cmake --color=$(COLOR)
+	cd /mirror/wgz/ICSA-SHU/admmdtf-collective/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /mirror/wgz/ICSA-SHU/admmdtf-collective /mirror/wgz/ICSA-SHU/admmdtf-collective /mirror/wgz/ICSA-SHU/admmdtf-collective/build /mirror/wgz/ICSA-SHU/admmdtf-collective/build /mirror/wgz/ICSA-SHU/admmdtf-collective/build/CMakeFiles/train_framework.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/train_framework.dir/depend
 

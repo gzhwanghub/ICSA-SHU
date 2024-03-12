@@ -8,7 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/mirror/wgz/admmdtf-collective/src/train_framework.i" "/mirror/wgz/admmdtf-collective/build/CMakeFiles/train_framework.dir/train_frameworkPYTHON.stamp"
+  "/mirror/wgz/ICSA-SHU/admmdtf-collective/src/train_framework.i" "/mirror/wgz/ICSA-SHU/admmdtf-collective/build/CMakeFiles/train_framework.dir/train_frameworkPYTHON.stamp"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

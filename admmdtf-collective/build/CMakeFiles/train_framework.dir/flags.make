@@ -4,7 +4,7 @@
 # compile CXX with mpic++
 CXX_DEFINES = -Dtrain_framework_EXPORTS
 
-CXX_INCLUDES = -I/usr/include/python3.10 -I/home/cluster/anaconda3/lib/python3.7/site-packages/mpi4py/include -I/mirror/wgz/admmdtf-collective/src
+CXX_INCLUDES = -I/usr/include/python3.10 -I/home/cluster/anaconda3/lib/python3.7/site-packages/mpi4py/include -I/mirror/wgz/ICSA-SHU/admmdtf-collective/src
 
 CXX_FLAGS = -fPIC -std=gnu++11
 

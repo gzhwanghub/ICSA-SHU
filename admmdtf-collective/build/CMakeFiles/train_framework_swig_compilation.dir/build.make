@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /mirror/wgz/admmdtf-collective
+CMAKE_SOURCE_DIR = /mirror/wgz/ICSA-SHU/admmdtf-collective
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /mirror/wgz/admmdtf-collective/build
+CMAKE_BINARY_DIR = /mirror/wgz/ICSA-SHU/admmdtf-collective/build
 
 # Utility rule file for train_framework_swig_compilation.
 
@@ -70,10 +70,10 @@ CMakeFiles/train_framework_swig_compilation: CMakeFiles/train_framework.dir/trai
 
 CMakeFiles/train_framework.dir/train_frameworkPYTHON.stamp: ../src/train_framework.i
 CMakeFiles/train_framework.dir/train_frameworkPYTHON.stamp: ../src/train_framework.i
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/mirror/wgz/admmdtf-collective/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Swig compile src/train_framework.i for python"
-	/usr/bin/cmake -E make_directory /mirror/wgz/admmdtf-collective/build/CMakeFiles/train_framework.dir /mirror/wgz/admmdtf-collective/build /mirror/wgz/admmdtf-collective/build/cpp
-	/usr/bin/cmake -E touch /mirror/wgz/admmdtf-collective/build/CMakeFiles/train_framework.dir/train_frameworkPYTHON.stamp
-	/usr/bin/cmake -E env SWIG_LIB=/usr/share/swig4.0 /usr/bin/swig4.0 -python -outdir /mirror/wgz/admmdtf-collective/build -c++ -interface _train_framework -I/usr/include/python3.10 -I/home/cluster/anaconda3/lib/python3.7/site-packages/mpi4py/include -I/mirror/wgz/admmdtf-collective/src -o /mirror/wgz/admmdtf-collective/build/cpp/train_frameworkPYTHON_wrap.cxx /mirror/wgz/admmdtf-collective/src/train_framework.i
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/mirror/wgz/ICSA-SHU/admmdtf-collective/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Swig compile src/train_framework.i for python"
+	/usr/bin/cmake -E make_directory /mirror/wgz/ICSA-SHU/admmdtf-collective/build/CMakeFiles/train_framework.dir /mirror/wgz/ICSA-SHU/admmdtf-collective/build /mirror/wgz/ICSA-SHU/admmdtf-collective/build/cpp
+	/usr/bin/cmake -E touch /mirror/wgz/ICSA-SHU/admmdtf-collective/build/CMakeFiles/train_framework.dir/train_frameworkPYTHON.stamp
+	/usr/bin/cmake -E env SWIG_LIB=/usr/share/swig4.0 /usr/bin/swig4.0 -python -outdir /mirror/wgz/ICSA-SHU/admmdtf-collective/build -c++ -interface _train_framework -I/usr/include/python3.10 -I/home/cluster/anaconda3/lib/python3.7/site-packages/mpi4py/include -I/mirror/wgz/ICSA-SHU/admmdtf-collective/src -o /mirror/wgz/ICSA-SHU/admmdtf-collective/build/cpp/train_frameworkPYTHON_wrap.cxx /mirror/wgz/ICSA-SHU/admmdtf-collective/src/train_framework.i
 
 train_framework_swig_compilation: CMakeFiles/train_framework.dir/train_frameworkPYTHON.stamp
 train_framework_swig_compilation: CMakeFiles/train_framework_swig_compilation
@@ -89,6 +89,6 @@ CMakeFiles/train_framework_swig_compilation.dir/clean:
 .PHONY : CMakeFiles/train_framework_swig_compilation.dir/clean
 
 CMakeFiles/train_framework_swig_compilation.dir/depend:
-	cd /mirror/wgz/admmdtf-collective/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /mirror/wgz/admmdtf-collective /mirror/wgz/admmdtf-collective /mirror/wgz/admmdtf-collective/build /mirror/wgz/admmdtf-collective/build /mirror/wgz/admmdtf-collective/build/CMakeFiles/train_framework_swig_compilation.dir/DependInfo.cmake --color=$(COLOR)
+	cd /mirror/wgz/ICSA-SHU/admmdtf-collective/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /mirror/wgz/ICSA-SHU/admmdtf-collective /mirror/wgz/ICSA-SHU/admmdtf-collective /mirror/wgz/ICSA-SHU/admmdtf-collective/build /mirror/wgz/ICSA-SHU/admmdtf-collective/build /mirror/wgz/ICSA-SHU/admmdtf-collective/build/CMakeFiles/train_framework_swig_compilation.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/train_framework_swig_compilation.dir/depend
 

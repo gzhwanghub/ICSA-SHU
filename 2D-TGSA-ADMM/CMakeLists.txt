@@ -1,7 +1,7 @@
 cmake_minimum_required(VERSION 3.8)
 project(sparse_admm)
 
-#SET(CMAKE_CXX_COMPILER "/data/home/xjsjleiyongmei/xjy/mpich/bin/mpicxx")
+
 set(CMAKE_CXX_COMPILER "mpic++")
 #SET(CMAKE_C_COMPILER  mpicc)
 set(CMAKE_CXX_STANDARD 11)

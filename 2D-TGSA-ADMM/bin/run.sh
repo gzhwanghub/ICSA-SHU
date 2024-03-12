@@ -1,2 +1,2 @@
 #!/bin/bash
-mpirun -f ./hostfile -np $1  ./gcadmm   
+mpirun -np 16 -f ./hostfile ./aparse_admm   

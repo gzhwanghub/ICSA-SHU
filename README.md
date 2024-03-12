@@ -5,7 +5,7 @@ The laboratory mainly studies the application of distributed ADMM in high perfor
 
 ## Quick Start
 ```shell
-$ 
+$ mkdir build
+$ cd build && cmake .. && make
 $ mpirun -np 16 -f ./hostfile ./executor
 ```
-## Reference

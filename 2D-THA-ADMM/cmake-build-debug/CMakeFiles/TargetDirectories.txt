@@ -1,3 +1,0 @@
-/mirror/wgz/admm_collective/cmake-build-debug/CMakeFiles/admm_collective.dir
-/mirror/wgz/admm_collective/cmake-build-debug/CMakeFiles/edit_cache.dir
-/mirror/wgz/admm_collective/cmake-build-debug/CMakeFiles/rebuild_cache.dir

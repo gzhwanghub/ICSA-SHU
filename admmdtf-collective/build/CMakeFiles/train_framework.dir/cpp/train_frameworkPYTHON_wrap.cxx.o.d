@@ -1,5 +1,5 @@
 CMakeFiles/train_framework.dir/cpp/train_frameworkPYTHON_wrap.cxx.o: \
- /mirror/wgz/admmdtf-collective/build/cpp/train_frameworkPYTHON_wrap.cxx \
+ /mirror/wgz/ICSA-SHU/admmdtf-collective/build/cpp/train_frameworkPYTHON_wrap.cxx \
  /usr/include/stdc-predef.h /usr/include/python3.10/Python.h \
  /usr/include/python3.10/patchlevel.h /usr/include/python3.10/pyconfig.h \
  /usr/include/x86_64-linux-gnu/python3.10/pyconfig.h \
@@ -252,7 +252,7 @@ CMakeFiles/train_framework.dir/cpp/train_frameworkPYTHON_wrap.cxx.o: \
  /usr/include/c++/11/cerrno /usr/include/c++/11/bits/charconv.h \
  /usr/include/c++/11/bits/functional_hash.h \
  /usr/include/c++/11/bits/basic_string.tcc \
- /mirror/wgz/admmdtf-collective/src/train_framework.h \
+ /mirror/wgz/ICSA-SHU/admmdtf-collective/src/train_framework.h \
  /usr/include/c++/11/map /usr/include/c++/11/bits/stl_tree.h \
  /usr/include/c++/11/ext/aligned_buffer.h \
  /usr/include/c++/11/bits/stl_map.h /usr/include/c++/11/tuple \

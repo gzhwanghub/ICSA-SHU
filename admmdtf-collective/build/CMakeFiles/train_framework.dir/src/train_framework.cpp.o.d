@@ -1,5 +1,5 @@
 CMakeFiles/train_framework.dir/src/train_framework.cpp.o: \
- /mirror/wgz/admmdtf-collective/src/train_framework.cpp \
+ /mirror/wgz/ICSA-SHU/admmdtf-collective/src/train_framework.cpp \
  /usr/include/stdc-predef.h /usr/include/mpi.h \
  /usr/include/c++/11/cstdint \
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \
@@ -173,7 +173,7 @@ CMakeFiles/train_framework.dir/src/train_framework.cpp.o: \
  /usr/include/x86_64-linux-gnu/bits/getopt_core.h \
  /usr/include/x86_64-linux-gnu/bits/unistd_ext.h \
  /usr/include/linux/close_range.h \
- /mirror/wgz/admmdtf-collective/src/train_framework.h \
+ /mirror/wgz/ICSA-SHU/admmdtf-collective/src/train_framework.h \
  /usr/include/c++/11/map /usr/include/c++/11/bits/stl_tree.h \
  /usr/include/c++/11/ext/aligned_buffer.h \
  /usr/include/c++/11/bits/stl_map.h /usr/include/c++/11/tuple \
