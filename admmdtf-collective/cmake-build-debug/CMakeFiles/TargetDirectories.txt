@@ -1,3 +1,3 @@
-/mirror/wgz/admmdtf-collective/cmake-build-debug/CMakeFiles/train_framework.dir
-/mirror/wgz/admmdtf-collective/cmake-build-debug/CMakeFiles/edit_cache.dir
-/mirror/wgz/admmdtf-collective/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/mirror/wgz/ICSA-SHU/admmdtf-collective/cmake-build-debug/CMakeFiles/train_framework.dir
+/mirror/wgz/ICSA-SHU/admmdtf-collective/cmake-build-debug/CMakeFiles/edit_cache.dir
+/mirror/wgz/ICSA-SHU/admmdtf-collective/cmake-build-debug/CMakeFiles/rebuild_cache.dir

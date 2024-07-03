@@ -1,0 +1,38 @@
+Fast Ineitia ADMM
+-------
+
+ADMM (Alternating Direction Method of Multipliers) algorithm is an iterative algorithm widely used for solving optimization problems. It is particularly effective in handling constrained optimization problems and is suitable for distributed computing environments.
+
+The advantages of Fast Ineitia ADMM are:
+
+**Efficiency**: FIADMM tackles the notable problem of uneven convergence speeds within distributed optimization subproblems particularly emphasizing the complications arising from disparate data distribution among computing workers. Such inconsistencies in convergence speeds can adversely affect the efficiency of distributed algorithms, leading to significant delays due to slower converging workers.
+
+**Scalability**: The FIADMM introduces a novel optimization framework, which integrates inertia acceleration and adaptive subproblem iteration to address the challenges of slow convergence and coordination in distributed machine learning tasks. This approach is particularly pertinent for large-scale, distributed data environments.
+
+**Robustness**: With the ADMM algorithm’s good convergence properties, a distributed training framework based on ADMM achieves stable convergence to the global or local optimal solution. In practical applications, this ensures the stability and reliability of the training process, enhancing the accuracy and reliability of the training results.
+
+
+Content
+-------
+**ADMM**: Fast Ineitia ADMM
+**optimizer** GD LBFGS TRON gdNesterov CG gdLineSearch SGD sgdLineSearch sgdStochasticAverageGradient sgdAdagrad
+
+Quick Start
+-------
+
+
+```
+# Step 1: Download
+git clone https://github.com/gzhwanghub/admmcomlkit.git
+
+# Step 2：Enter the project directory and build
+cd build/ && cmake .. && make
+
+# Step 3: Running
+cd .. && mpirun -np 17 -f ./hostfile build/FIADMM -file ./group_admm.conf
+
+# Check the results
+cat output.csv
+
+...
+```

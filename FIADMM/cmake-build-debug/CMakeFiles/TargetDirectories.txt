@@ -1,0 +1,3 @@
+/mirror/wgz/ICSA-SHU/FIADMM/cmake-build-debug/CMakeFiles/FIADMM.dir
+/mirror/wgz/ICSA-SHU/FIADMM/cmake-build-debug/CMakeFiles/edit_cache.dir
+/mirror/wgz/ICSA-SHU/FIADMM/cmake-build-debug/CMakeFiles/rebuild_cache.dir
