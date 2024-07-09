@@ -18,7 +18,6 @@
 #include "allreduce/reduceoperator.h"
 #include "allreduce/simpleallreduce.h"
 #include "include/FileIO.h"
-
 using namespace std;
 using namespace comlkit;
 
@@ -58,14 +57,14 @@ int main(int argc, char **argv) {
 //        char const *testdata_file = "/mirror/dataset/log1p/test";
 //        sprintf(filename, "/mirror/dataset/tfidf/%d/data%03d", procnum - 1, myid);
 //        char const *testdata_file = "/mirror/dataset/tfidf/test";
-//        sprintf(filename, "/mirror/dataset/real/%d/data%03d", procnum, myid);
+//        sprintf(filename, "/mirror/dataset/real/%d/data%03d", procnum - 1, myid);
 //        char const *testdata_file = "/mirror/dataset/real/test";
-//        sprintf(filename, "/mirror/dataset/gisette/%d/data%03d", procnum, myid);
+//        sprintf(filename, "/mirror/dataset/gisette/%d/data%03d", procnum - 1, myid);
 //        char const *testdata_file = "/mirror/dataset/gisette/test";
-//        sprintf(filename, "/mirror/dataset/news20old/%d/data%03d", procnum, myid);
-//        char const *testdata_file = "/mirror/dataset/news20old/test";
-        sprintf(filename, "/mirror/dataset/rcv1/%d/data%03d", procnum - 1, myid);
-        char const *testdata_file = "/mirror/dataset/rcv1/test";
+        sprintf(filename, "/mirror/dataset/news20old/%d/data%03d", procnum - 1, myid);
+        char const *testdata_file = "/mirror/dataset/news20old/test";
+//        sprintf(filename, "/mirror/dataset/rcv1/%d/data%03d", procnum - 1, myid);
+//        char const *testdata_file = "/mirror/dataset/rcv1/test";
 //        sprintf(filename, "/mirror/dataset/url/%d/data%03d", procnum, myid);
 //        char const *testdata_file = "/mirror/dataset/url/test";
 //        sprintf(filename, "/mirror/dataset/kddbr/%d/data%03d", procnum, myid);

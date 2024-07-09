@@ -32,8 +32,7 @@
 #include <mpi.h>
 #include "../Eigen/Dense"
 #include "include/L1LogisticLoss.h"
-
-
+#include <sys/wait.h>
 #define  random(x)(rand()%x)
 #define LR 1
 #define SVM 2
@@ -64,7 +63,7 @@ ADMM::ADMM(args_t *args, vector<struct SparseFeature> train_features, comlkit::V
     data_number_ = ntrian_;
     // ADMM parameter setting and initialization.
     rho = args->rho;
-    beta_ = 0.2; // high precision && faster convergence
+    beta_ = 0.0; // high precision && faster convergence
     l2reg_ = 0;
     l1reg_ = 1;
     if (l1reg_ > 0)
@@ -128,8 +127,7 @@ ADMM::~ADMM() {
 void ADMM::alpha_update(const comlkit::Vector &new_x, const comlkit::Vector &old, const comlkit::Vector &sumx) {
     int numsofneighbors = nears.neighborsNums - 1;
 //    new_alpha_ += rho * (numsofneighbors * new_x - sumx) - beta_ * (new_alpha_ - old); // bad
-    new_alpha_ += rho * (numsofneighbors * new_x - sumx) -
-                  beta_ * (new_x - old); // primal variable history message is better than dual variable
+    new_alpha_ += rho * (numsofneighbors * new_x - sumx) - beta_ * (new_x - old); // primal variable history message is better than dual variable
 //    new_alpha_ += rho * (numsofneighbors * new_x - sumx) + beta_ * (new_x - old); // svr regression
 //    new_alpha_ +=
 //            rho * (numsofneighbors * new_x - sumx); // primal variable history message is better than dual variable
@@ -233,7 +231,6 @@ double ADMM::loss_value_comlkit(int method, Vector parameter) {
                 sum += val * val;
             }
         }
-
         return sum / sample_num;
     }
 }
@@ -244,6 +241,7 @@ void ADMM::group_train(clock_t start_time) {
     double comm_btime, comm_etime, cal_btime, cal_etime;
     double comm_time, avarage_comm_time, cal_time, one_iteration_time, sum_iteration_time = 0.0, avarage_cal_time, fore_time = 0.0, sum_cal_time = 0.0;
     MPI_Status status;
+    double store_time[procnum - 1];
     int32_t k = 1;
     vector<int> nodes;
     double sparseCount = 0;
@@ -255,7 +253,7 @@ void ADMM::group_train(clock_t start_time) {
     // Create Torus group.
     //    CreateGroup();
     // Experimental results are saved to a csv file.
-    FILE *fp = fopen("probit_rcv1_16_gadmm2_sgddecay_50.csv", "w+");
+    FILE *fp = fopen("probit_news20_16_gadmm_gdn_5.csv", "w+");
     if (fp == NULL) {
         fprintf(stderr, "fopen() failed.\n");
         exit(EXIT_FAILURE);
@@ -296,17 +294,17 @@ void ADMM::group_train(clock_t start_time) {
 //        L2SmoothSVMLoss<SparseFeature> svm(mtrian_, train_features_, ytrain_, sum_msg_, nears.neighborsNums, 1, rho, 1);
         L2ProbitLoss<SparseFeature> probit(mtrian_, train_features_, ytrain_, sum_msg_, nears.neighborsNums, 1, rho, 1);
         // Subproblem Solving Optimizer
-//        if (k <= 2) {zhi
+//        if (k <= 2) {
 //            new_x_ = gdNesterov(svr, new_x_, 1, 1e-4, 50);
 //        } else {
 //            new_x_ = gdNesterov(svr, new_x_, 1, 1e-4, 10);
 //        }
 //        new_x_ = gd(probit, new_x_, 0.1, 50);
 //        new_x_ = gdLineSearch(svm, new_x_, 1, 1e-4, 50);
-//        new_x_ = gdNesterov(svm, new_x_, 1, 1e-4, 50);
-//        new_x_ = gdBarzilaiBorwein(svm, new_x_, 1, 1e-4, 50);
+        new_x_ = gdNesterov(probit, new_x_, 1, 1e-4, 50);
+//        new_x_ = gdBarzilaiBorwein(svr, new_x_, 1, 1e-4, 50);
 //        new_x_ = sgdAdagrad(svr, new_x_, ntrian_, 1e-2, 200, 1e-4, 50);
-        new_x_ = sgdDecayingLearningRate(probit, new_x_, ntrian_, 0.5 * 1e-1, 200, 1e-4, 50);
+//        new_x_ = sgdDecayingLearningRate(probit, new_x_, ntrian_, 0.5 * 1e-1, 200, 1e-4, 50);
 //        new_x_ = cg(svm, new_x_, 1, 1e-4, 50);
 //        new_x_ = lbfgsMin(svm, new_x_, 1, 1e-4, 50);
 //        new_x_ = tron(svm, myid, new_x_, 50);
@@ -322,12 +320,6 @@ void ADMM::group_train(clock_t start_time) {
         }
         comm_btime = MPI_Wtime();
         MPI_Allreduce(new_x_temp, sum_msg_temp, dim_, MPI_DOUBLE, MPI_SUM, worker_comm);
-        // Torus synchronizaiton method.
-//        if (k % 2 == 0) {
-//            MPI_Allreduce(new_x_temp, sum_msg_temp, dim_, MPI_DOUBLE, MPI_SUM, SUBGRP_COMM_EVEN_);
-//        } else {
-//            MPI_Allreduce(new_x_temp, sum_msg_temp, dim_, MPI_DOUBLE, MPI_SUM, SUBGRP_COMM_ODD_);
-//        }
         comm_etime = MPI_Wtime();
         for (int i = 0; i < dim_; ++i) {
             sum_msg_temp[i] -= new_x_temp[i];
@@ -339,14 +331,13 @@ void ADMM::group_train(clock_t start_time) {
         delete[] sum_msg_temp;
         e_time = MPI_Wtime();
         one_iteration_time = (double) (e_time - cal_btime);
-
         cal_time = (double) (cal_etime - cal_btime);
         comm_time = (double) (comm_etime - comm_btime);
 //        MPI_Barrier(MPI_COMM_WORLD);
+        sum_iteration_time += one_iteration_time;
+        sum_cal_time += cal_time;
         if (myid == 0) {
             sparseCount = 0;
-            sum_iteration_time += one_iteration_time;
-            sum_cal_time += cal_time;
             // Model sparsity calculation
 //                for (int i = 0; i < dim; i++) {
 //                    if (new_x_[i] < 1e-5) {
@@ -356,7 +347,6 @@ void ADMM::group_train(clock_t start_time) {
             // Output of calculation results to the console
             double loss = loss_value_comlkit(4, new_x_);
             double predict = predict_comlkit(1, new_x_);
-
             printf("%3d %12f %12f %12f %12f %12f %12f\n", k, loss, predict,
                    one_iteration_time,
                    comm_time, sum_cal_time, sum_iteration_time);
@@ -367,7 +357,48 @@ void ADMM::group_train(clock_t start_time) {
             fore_time = one_iteration_time;
             sum_comm_ += comm_time;
         }
+        MPI_Group world_group2;
+        MPI_Comm_group( MPI_COMM_WORLD, &world_group2);
+        int ranks[] = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15};
+        MPI_Group subgroup2;
+        MPI_Group_incl(world_group2, 16, ranks, &subgroup2);
+        MPI_Comm new_comm;
+        MPI_Comm_create_group(MPI_COMM_WORLD, subgroup2,111, &new_comm);
+        if (myid == 0) {
+            store_time[0] = one_iteration_time;
+            for (int i = 1; i < procnum - 1; i++) {
+                MPI_Recv(&store_time[i], 1, MPI_DOUBLE, i, 111, new_comm, MPI_STATUS_IGNORE);
+            }
+        } else {
+            MPI_Send(&one_iteration_time, 1, MPI_DOUBLE, 0, 111, new_comm);
+        }
+        if (myid == 0) {
+            for (int i = 0; i < procnum - 1; i++) {
+                fprintf(fp, "%f ", store_time[i]);
+            }
+            fprintf(fp, "\n");
+        }
         k++;
     }
+//    MPI_Group world_group2;
+//    MPI_Comm_group( MPI_COMM_WORLD, &world_group2);
+//    int ranks[] = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15};
+//    MPI_Group subgroup2;
+//    MPI_Group_incl(world_group2, 16, ranks, &subgroup2);
+//    MPI_Comm new_comm;
+//    MPI_Comm_create_group(MPI_COMM_WORLD, subgroup2,111, &new_comm);
+//    if (myid == 0) {
+//        store_time[0] = sum_iteration_time;
+//        for (int i = 1; i < procnum - 1; i++) {
+//            MPI_Recv(&store_time[i], 1, MPI_DOUBLE, i, 111, new_comm, MPI_STATUS_IGNORE);
+//        }
+//    } else {
+//        MPI_Send(&sum_iteration_time, 1, MPI_DOUBLE, 0, 111, new_comm);
+//    }
+//    if (myid == 0) {
+//        for (int i = 0; i < procnum - 1; i++) {
+//            fprintf(fp, "%f ", store_time[i]);
+//        }
+//    }
     fclose(fp);
 }
